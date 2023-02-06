@@ -25,6 +25,7 @@
     color: #999;
     font-size: 0.9em;
   }
+
   .recipe-list .card div {
     color: #555;
     font-size: 0.7em;
@@ -43,4 +44,12 @@
     padding: 8px;
     border-radius: 4px;
     margin: 20px auto 0;
+  }
+  .recipe-list .card.dark{
+    background-color: #555;
+  }
+  .recipe-list .card.dark p,
+  .recipe-list .card.dark h3,
+  .recipe-list .card.dark div{
+    color: #e4e4e4;
   }

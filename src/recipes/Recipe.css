@@ -20,10 +20,17 @@
 .recipe li::after{
     content: ',';
 }
+
 .recipe li:last-child::after{
     content: '.';
 }
 .method{
     text-align: left;
     line-height: 1.5rem;
+}
+.recipe.dark,
+.recipe.dark .page-title
+{
+    background: #555;
+    color: #e4e4e4;
 }

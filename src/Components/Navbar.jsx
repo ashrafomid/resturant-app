@@ -1,18 +1,22 @@
-import React from 'react'
 import { Link } from 'react-router-dom'
+import { useTheme } from '../hooks/useTheme'
+
+// styles
 import './Navbar.css'
 import Searchbar from './Searchbar'
 
 export default function Navbar() {
-  
+  const { color} = useTheme()
+
   return (
-    <div className='navbar'>
-        <Link to='/' className='brand'>
-        Jamal Ghazna Resturant
+    <div className="navbar" style={{ background: color }}>
+      <nav>
+        <Link to="/" className="brand">
+          <h1>Jamal Ghazna Resturant</h1>
         </Link>
-        <Searchbar/>
-        <Link to='create'>Create Recipe</Link>
-        
+        <Searchbar />
+        <Link to="/create">Create Recipe</Link>
+      </nav>
     </div>
   )
 }
